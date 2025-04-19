@@ -107,6 +107,46 @@
         type: "qr",
         question: "Indice temporaire 3 – Aller jusqu'à l'arbre qui cache un secret",
         expectedQr: "qr-2"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 4 – Près du banc qui regarde l’étang",
+        expectedQr: "qr-3"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 5 – Là où le soleil tape le plus fort à midi",
+        expectedQr: "qr-4"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 6 – Derrière la vieille remise en bois",
+        expectedQr: "qr-5"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 7 – Là où les oiseaux chantent le matin",
+        expectedQr: "qr-6"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 8 – Sous la grande cloche",
+        expectedQr: "qr-7"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 9 – Près du pont qui ne traverse rien",
+        expectedQr: "qr-8"
+      },
+      {
+        type: "qr",
+        question: "Indice temporaire 10 – La cabane au fond du jardin",
+        expectedQr: "qr-9"
+      },
+      {
+        type: "qr",
+        question: "Indice final – L’endroit où les œufs sont bien cachés",
+        expectedQr: "qr-10"
       }
     ];
 
@@ -189,7 +229,8 @@
         showQuestion();
       } else {
         document.getElementById('main-container').innerHTML = `
-          <h2>🏁 Fin de la chasse !<br>Bravo à tous !</h2>
+          <h2>🥚🎉 Bravo ! Vous avez trouvé le trésor !</h2>
+          <p>Merci d’avoir participé à cette chasse au trésor du Jeu Pascal 2025.</p>
         `;
       }
     }
