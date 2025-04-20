@@ -1,3 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeu Pascal 2025</title>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .app {
+      max-width: 400px;
+      width: 100%;
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .intro {
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .carquois-img, .puits-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      background: #8B4513;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #A0522D;
+    }
+    .question, .options {
+      margin-bottom: 20px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .feedback {
+      text-align: center;
+      margin-top: 10px;
+      color: red;
+    }
+    #qr-reader {
+      width: 100%;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div id="main-container">
+      <h1>Jeu Pascal 2025</h1>
+      <img src="carquois_chasse.jpg" alt="Carquois" class="carquois-img" />
+      <div class="intro">
+        Bonjour et bienvenue à l’édition 2025 du <strong>Jeu Pascal</strong> !<br><br>
+        Après une année olympique, cette édition s’annonce historique : <strong>Dianou</strong> atteindra enfin la majorité… 
+        et peut-être ne sera-t-elle plus éligible au Jeu Pascal ? <em>À suivre !</em><br><br>
+        Cette année, le lieu change : fini le château ! Nous voilà tout près du <strong>manoir Saint-Michel</strong>, aux côtés de la mère Michelle…
+      </div>
+      <button onclick="startQuiz()">🏹 Commencer la chasse</button>
+    </div>
+  </div>
+
 <script>
   const questions = [
     {
@@ -186,3 +275,6 @@
     }
   }
 </script>
+
+</body>
+</html>
